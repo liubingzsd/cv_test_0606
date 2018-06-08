@@ -14,4 +14,56 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mat.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mat_math.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sift.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="image_filter.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="file_operation.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="convert.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cv_test.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mat.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mat_math.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sift.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="image_filter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="file_operation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="convert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
