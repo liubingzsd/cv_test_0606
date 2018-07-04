@@ -2,7 +2,7 @@
 #define _FILE_OPERATION_H_
 #include <stdio.h>
 #include <stdint.h>
-
+#include "mat.h"
 
 #ifdef  __cplusplus  
 extern "C" {
@@ -12,6 +12,8 @@ void read_data_from_file_u8(FILE *fp, uint8_t *data, int m, int n);
 void write_data_to_file_f32(FILE *fp, float *data, int m, int n);
 void write_data_to_file_u8(FILE *fp, uint8_t *data, int m, int n);
 void write_data_to_file_s16(FILE *fp, int16_t *data, int m, int n);
+mat_s* mat_read_data_u8_from_file_path(char* path, int rows, int cols);
+uint8_t* read_data_u8_from_file_path(char* path, int rows, int cols);
 
 #ifdef  __cplusplus  
 }

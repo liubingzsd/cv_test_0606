@@ -15,29 +15,56 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mat.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="mat_math.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="sift.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="image_filter.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="kernel.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="file_operation.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="convert.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="cv_test.c">
+    <ClCompile Include="cv_test.cpp">
       <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mat_math.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mat.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="image_filter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="file_operation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sift_test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="image_features.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="image_smooth.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="linked_list.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="feature_list.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="feature_seq.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="svd_solver.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="kdtree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="min_pq.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xform.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -45,9 +72,6 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="mat_math.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="sift.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="image_filter.h">
@@ -63,6 +87,36 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="convert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sift_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="image_features.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="image_smooth.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="linked_list.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="feature_list.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="feature_seq.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="svd_solver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="kdtree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="min_pq.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xform.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

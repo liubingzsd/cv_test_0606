@@ -9,8 +9,8 @@ CvMat *mat_to_CvMat(mat_s *mat);
 CvMat data_to_CvMat(uint8_t *data, int rows, int cols);
 IplImage *mat_to_image(mat_s *mat);
 IplImage *data_to_image(uint8_t *data, int rows, int cols);
-extern "C" void image_show_mat(char *str, mat_s *mat);
-extern "C" void image_show_data(char *str, uint8_t *mat, int rows, int cols);
+void image_show_mat(char *str, mat_s *mat);
+void image_show_data(char *str, uint8_t *mat, int rows, int cols);
 void test_convert();
 
 #endif

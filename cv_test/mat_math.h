@@ -9,6 +9,6 @@ void mat_printf(mat_s *mat);
 mat_s *mat_mul(mat_s *a,mat_s *b);
 mat_s *mat_sub(mat_s *a, mat_s *b);
 mat_s *mat_add(mat_s *a, mat_s *b);
-
+void mat_sub_r(mat_s *a, mat_s *b, mat_s *c);
 #endif
 

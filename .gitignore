@@ -263,3 +263,10 @@ __pycache__/
 /cv_test/mat_u8
 /cv_test/dst_f.dat
 /cv_test/dst.dat
+/cv_test/before.dat
+/cv_test/before
+/cv_test/after.dat
+/cv_test/after
+/cv_test/o_i.dat
+/cv_test/mat2.dat
+/cv_test/mat1.dat

@@ -2,29 +2,38 @@
 #include "convert.h"
 #include <opencv2/highgui/highgui.hpp>
 
-
 CvMat *mat_to_CvMat(mat_s *mat)
 {
-	CvMat *Mat;
-	if (mat->type = MAT_U8)
+	CvMat *Mat = NULL;
+	if (mat->type == MAT_U8)
 	{
 		Mat = cvCreateMat(mat->rows, mat->cols, CV_8UC1);
+		cvInitMatHeader(Mat, mat->rows, mat->cols, CV_8UC1, (uint8_t *)mat->buf);
 	}
-	else if (mat->type = MAT_S8)
+	else if (mat->type == MAT_S8)
 	{
 		Mat = cvCreateMat(mat->rows, mat->cols, CV_8SC1);
+		cvInitMatHeader(Mat, mat->rows, mat->cols, CV_8SC1, (int8_t *)mat->buf);
 	}
-	else if (mat->type = MAT_U16)
+	else if (mat->type == MAT_U16)
 	{
 		Mat = cvCreateMat(mat->rows, mat->cols, CV_16UC1);
+		cvInitMatHeader(Mat, mat->rows, mat->cols, CV_16UC1, (uint16_t *)mat->buf);
 	}
-	else if (mat->type = MAT_S16)
+	else if (mat->type == MAT_S16)
 	{
 		Mat = cvCreateMat(mat->rows, mat->cols, CV_16SC1);
+		cvInitMatHeader(Mat, mat->rows, mat->cols, CV_16SC1, (int16_t *)mat->buf);
 	}
-	else if (mat->type = MAT_F32)
+	else if (mat->type == MAT_F32)
 	{
 		Mat = cvCreateMat(mat->rows, mat->cols, CV_32FC1);
+		cvInitMatHeader(Mat, mat->rows, mat->cols, CV_32FC1, (float *)mat->buf);
+	}
+	else if (mat->type == MAT_F64)
+	{
+		Mat = cvCreateMat(mat->rows, mat->cols, CV_64FC1);
+		cvInitMatHeader(Mat, mat->rows, mat->cols, CV_64FC1, (double *)mat->buf);
 	}
 	return Mat;
 }
@@ -59,18 +68,20 @@ IplImage *mat_to_image(mat_s *mat)
 		Mat = cvMat(mat->rows, mat->cols, CV_32FC1, mat->buf);
 	}
 	
-	IplImage *img = (IplImage *)cvClone(&Mat);
+	IplImage *img = cvCreateImage(cvGetSize(&Mat), 8, 1);
+	cvGetImage(&Mat, img);
 	return img;
 }
 
 IplImage *data_to_image(uint8_t *data, int rows, int cols)
 {
 	CvMat Mat = data_to_CvMat(data, rows, cols);
-	IplImage *img = (IplImage *)cvClone(&Mat);
+	IplImage *img = cvCreateImage(cvGetSize(&Mat), 8, 1);
+	cvGetImage(&Mat, img);
 	return img;
 }
 
-extern "C" void image_show_mat(char *str,mat_s *mat)
+void image_show_mat(char *str,mat_s *mat)
 {
 	IplImage *img = mat_to_image(mat);
 	cvNamedWindow(str, 1);
@@ -80,7 +91,7 @@ extern "C" void image_show_mat(char *str,mat_s *mat)
 //	cvReleaseImage(&img);
 }
 
-extern "C" void image_show_data(char *str,uint8_t *data, int rows, int cols)
+void image_show_data(char *str,uint8_t *data, int rows, int cols)
 {
 	IplImage *img = data_to_image(data,rows,cols);
 	cvNamedWindow(str, 1);

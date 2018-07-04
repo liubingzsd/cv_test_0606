@@ -134,23 +134,41 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="convert.cpp" />
-    <ClCompile Include="cv_test.c" />
-    <ClCompile Include="file_operation.c" />
-    <ClCompile Include="image_filter.c" />
-    <ClCompile Include="kernel.c" />
-    <ClCompile Include="mat.c" />
-    <ClCompile Include="mat_math.c" />
-    <ClCompile Include="sift.c" />
+    <ClCompile Include="cv_test.cpp" />
+    <ClCompile Include="feature_list.cpp" />
+    <ClCompile Include="feature_seq.cpp" />
+    <ClCompile Include="file_operation.cpp" />
+    <ClCompile Include="image_features.cpp" />
+    <ClCompile Include="image_filter.cpp" />
+    <ClCompile Include="image_smooth.cpp" />
+    <ClCompile Include="kdtree.cpp" />
+    <ClCompile Include="kernel.cpp" />
+    <ClCompile Include="linked_list.cpp" />
+    <ClCompile Include="mat.cpp" />
+    <ClCompile Include="mat_math.cpp" />
+    <ClCompile Include="min_pq.cpp" />
+    <ClCompile Include="sift_test.cpp" />
+    <ClCompile Include="svd_solver.cpp" />
+    <ClCompile Include="xform.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common.h" />
     <ClInclude Include="convert.h" />
+    <ClInclude Include="feature_list.h" />
+    <ClInclude Include="feature_seq.h" />
     <ClInclude Include="file_operation.h" />
+    <ClInclude Include="image_features.h" />
     <ClInclude Include="image_filter.h" />
+    <ClInclude Include="image_smooth.h" />
+    <ClInclude Include="kdtree.h" />
     <ClInclude Include="kernel.h" />
+    <ClInclude Include="linked_list.h" />
     <ClInclude Include="mat.h" />
     <ClInclude Include="mat_math.h" />
-    <ClInclude Include="sift.h" />
+    <ClInclude Include="min_pq.h" />
+    <ClInclude Include="sift_test.h" />
+    <ClInclude Include="svd_solver.h" />
+    <ClInclude Include="xform.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
